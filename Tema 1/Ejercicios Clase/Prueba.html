@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de imágenes con JavaScript</title>
+</head>
+
+<body>
+
+    <h1>Cambio de imágenes con JavaScript</h1>
+
+    <img id="myFPImage"
+         onclick="cambiaPic()"
+         src="https://upload.wikimedia.org/wikipedia/commons/3/37/Vinicius_Jr_2018_%28cropped%29.jpg"
+         width="500"
+         height="580"
+         alt="Vinícius Jr">
+
+    <p>Haz clic sobre la imagen para cambiarla.</p>
+
+    <script>
+        function cambiaPic() {
+            var image = document.getElementById("myFPImage");
+
+            if (image.src.includes("Vinicius_Jr")) {
+                image.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMYdQaYfKpr03V7DKn7JwEOlrzwlm3-bs6ra-KdNdn3xBRMYCFHs33x1As&s=10";
+            } else {
+                image.src = "https://upload.wikimedia.org/wikipedia/commons/3/37/Vinicius_Jr_2018_%28cropped%29.jpg";
+            }
+        }
+    </script>
+
+</body>
+</html>

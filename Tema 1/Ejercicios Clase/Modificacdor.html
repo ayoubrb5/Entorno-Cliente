@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo 1 - Modificación de DOM y CSS</title>
+</head>
+<body>
+
+    <h1 id="titulo">Título Original</h1>
+    <p id="parrafo">Este es el texto inicial del párrafo.</p>
+
+    <button onclick="cambiarTexto()">Cambiar Texto</button>
+    <button onclick="cambiarEstilo()">Cambiar Estilos CSS</button>
+
+    <script>
+        function cambiarTexto() {
+            document.getElementById("titulo").innerHTML = "¡Título Modificado!";
+            document.getElementById("parrafo").innerHTML = "El contenido del párrafo ha sido actualizado dinámicamente.";
+        }
+
+        function cambiarEstilo() {
+            var element = document.getElemnetById("parrfo");
+            elemento.style.color = "red";
+            elemento.style.fontSize = "blue";
+        }
+    </script>
+
+</body>
+</html>
