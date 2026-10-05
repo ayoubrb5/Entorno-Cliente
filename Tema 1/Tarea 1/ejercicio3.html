@@ -5,45 +5,43 @@
 <title>Ejercicio 3</title>
 </head>
 <body>
-  <h1>Test de JavaScript</h1>
+  <h1>Test de películas y series</h1>
 
-  <p id="p1">1. JavaScript y Java son el mismo lenguaje.</p>
-  <button onclick="comprobar('p1', true, false)">Verdadero</button>
-  <button onclick="comprobar('p1', false, false)">Falso</button>
+  <p id="p1">1. La serie Stranger Things empieza en el pueblo de Hawkins.</p>
+  <button onclick="acierto('p1')">Verdadero</button>
+  <button onclick="error('p1')">Falso</button>
 
-  <p id="p2">2. JavaScript se puede ejecutar en el navegador.</p>
-  <button onclick="comprobar('p2', true, true)">Verdadero</button>
-  <button onclick="comprobar('p2', false, true)">Falso</button>
+  <p id="p2">2. En Star Wars, Darth Vader es el padre de Luke Skywalker.</p>
+  <button onclick="acierto('p2')">Verdadero</button>
+  <button onclick="error('p2')">Falso</button>
 
-  <p id="p3">3. console.log() muestra un mensaje en la consola.</p>
-  <button onclick="comprobar('p3', true, true)">Verdadero</button>
-  <button onclick="comprobar('p3', false, true)">Falso</button>
+  <p id="p3">3. La película Titanic fue dirigida por Steven Spielberg.</p>
+  <button onclick="error('p3')">Verdadero</button>
+  <button onclick="acierto('p3')">Falso</button>
 
-  <p id="p4">4. En JavaScript se pueden crear variables con var.</p>
-  <button onclick="comprobar('p4', true, true)">Verdadero</button>
-  <button onclick="comprobar('p4', false, true)">Falso</button>
+  <p id="p4">4. En Juego de Tronos, el símbolo de la casa Stark es un lobo.</p>
+  <button onclick="acierto('p4')">Verdadero</button>
+  <button onclick="error('p4')">Falso</button>
 
-  <p id="p5">5. JavaScript no puede cambiar el contenido de una página HTML.</p>
-  <button onclick="comprobar('p5', true, false)">Verdadero</button>
-  <button onclick="comprobar('p5', false, false)">Falso</button>
+  <p id="p5">5. Shrek es un ogro de color rojo.</p>
+  <button onclick="error('p5')">Verdadero</button>
+  <button onclick="acierto('p5')">Falso</button>
 
-  <p id="p6">6. alert() muestra una ventana emergente.</p>
-  <button onclick="comprobar('p6', true, true)">Verdadero</button>
-  <button onclick="comprobar('p6', false, true)">Falso</button>
+  <p id="p6">6. La Casa de Papel es una serie española.</p>
+  <button onclick="acierto('p6')">Verdadero</button>
+  <button onclick="error('p6')">Falso</button>
 
-  <p id="p7">7. El código JavaScript se escribe dentro de la etiqueta &lt;style&gt;.</p>
-  <button onclick="comprobar('p7', true, false)">Verdadero</button>
-  <button onclick="comprobar('p7', false, false)">Falso</button>
+  <p id="p7">7. En Toy Story, Woody es un astronauta.</p>
+  <button onclick="error('p7')">Verdadero</button>
+  <button onclick="acierto('p7')">Falso</button>
 
   <script>
-    // id = la frase, respuesta = lo que pulsa el usuario, correcta = la solución
-    function comprobar(id, respuesta, correcta) {
-      var frase = document.getElementById(id);
-      if (respuesta == correcta) {
-        frase.style.color = "green";
-      } else {
-        frase.style.color = "red";
-      }
+    function acierto(id) {
+      document.getElementById(id).style.color = "green";
+    }
+
+    function error(id) {
+      document.getElementById(id).style.color = "red";
     }
   </script>
 </body>
