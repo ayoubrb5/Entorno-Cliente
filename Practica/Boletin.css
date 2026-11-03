@@ -37,7 +37,6 @@ h2 {
   font-size: 22px;
 }
 
-/* Tabla */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -65,7 +64,6 @@ td.media {
   font-weight: bold;
 }
 
-/* Formulario */
 .formulario {
   display: flex;
   flex-wrap: wrap;
